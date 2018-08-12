@@ -9,6 +9,7 @@ Special thanks for the organizers of the event for deploying this kind of challe
 Writeups added:
 - [Level 3: Sweden](levels/level_03-Sweden.md)
 - [Level 5: Guatemala](levels/level_05-Guatemala.md)
+- [Level 6: Zambia](levels/level_06-Zambia.md)
 - [Level 11: Ethiopia](levels/level_11-Ethiopia.md)
 - [Level 13: India](levels/level_13-India.md)
 
