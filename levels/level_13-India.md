@@ -154,3 +154,20 @@ Solution
 --------
 
 ```flag:{ea940af17b004f229329682b4ab0d2502d739920c27d4d6ea94233780fe7fa72c21b31c56e2b4aa68340992a2147056d298870faf4094f179025579a40266cf1}```
+
+
+Lessons Learned
+---------------
+
+The analyst arsenal for this challenge included:
+
+- Google Search Engine
+- Docker documentation
+- Docker
+- Basic GNU/Linux skills
+
+Things not to forget in future competitions:
+
+1. Keeping an eye to the official documentation and forums for each tool
+2. Have ways of reformulating the technical needs after an error pop ups
+3. When listing files in a CTF machine, do not forget `ls -la` to show hidden files instead of trying to be quicker with `ls`. That saves time. :)
