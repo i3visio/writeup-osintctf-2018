@@ -8,3 +8,7 @@ Organized by the ReconVillage at Defcon 26, the event is a CTF competition with 
 - License: This work is licensed under a [http://creativecommons.org/licenses/by-sa/4.0/](Creative Commons Attribution-ShareAlike 4.0 International License).
 
 Special thanks for the organizers of the event for deploying this kind of challenges to the OSINT community.
+
+Writeups added:
+- [Level 3: Sweden](levels/level_03-Sweden.md)
+- [Level 13: India](levels/level_13-India.md)
