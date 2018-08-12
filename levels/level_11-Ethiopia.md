@@ -18,21 +18,17 @@ Having no results is not a problem if you know how this data is shown by legitim
 
 So we have things like this:
 
-![A Redis example](/res/level_12-redis_example.png)
+![A Redis example](/res/level_11-redis_example.png)
 
 Let's try `redis_build_id:ef08edc3eb2339c3`. The results are not a lot. 
 
-![A lot of machines](/res/level_12-many_systems.png)
+![A lot of machines](/res/level_11-many_systems.png)
 
-Remember that the description said that the pentesting took place in Germany, so let's add `country:de`. 
+Remember that the description said that the pentesting took place in Germany, so let's add `country:"DE"`. 
 
-![Looking for German machines](/res/level_12-germany.png)
+![Looking for German machines](/res/level_11-germany.png)
 
-It seems that it is time to try until we find this…
-
-![The final answer](/res/level_12-answer.png)
-
-Another one for us.
+It seems that it is time to try until we find the correct one `57109bb0e90558c7b83bbacb098811e22e87cfdb`. Another one for us.
 
 Solution
 --------
