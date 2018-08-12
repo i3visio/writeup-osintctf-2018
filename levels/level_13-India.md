@@ -40,7 +40,7 @@ Error: image dev-aws-test-code:latest not found
 
 So, this is an error that simply says that there is not image tagged as `:latest`, which is the default tag assumed when not provided. As we do not have Docker Hub web UI to ask for it, we come back to Google to ask for a way of listing the tags of an image and we find [this](https://docs.docker.com/registry/spec/api/#listing-image-tags) in the Docker documentation:
 
-![](res/level_13-list_images.png)
+![List images](/res/level_13-list_images.png)
 
 ```
 $ curl http://52.53.166.207:5000/v2/dev-aws-test-code/tags/list
