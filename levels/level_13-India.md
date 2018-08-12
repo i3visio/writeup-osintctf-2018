@@ -14,7 +14,7 @@ We use docker private registry to host our secure AWS app.
 WriteUp
 -------
 
-So it seems that the company has started their own *Docker Hub*. A Google search for `docker private registry` throws interesting results such as [https://docs.docker.com/registry/deploying/](this). What is interesting from it is the fact that they are typically up in port 5000 and deployed with:
+So it seems that the company has started their own *Docker Hub*. A Google search for `docker private registry` throws interesting results such as [this](https://docs.docker.com/registry/deploying/). What is interesting from it is the fact that they are typically up in port 5000 and deployed with:
 
 ```
 […]
@@ -22,7 +22,7 @@ $ docker run -d -p 5000:5000 --restart=always --name registry registry:2
 […]
 ```
 
-Typically, if we want to search in Docker Hub we can use `docker search whatever` but it is not possible to launch it directly to a private hub. Coming back to Google, we know want to try recover the available Docker images in the private hub and we find [https://forums.docker.com/t/docker-private-registry-how-to-list-all-images/21136/3](this) in the Docker Forums which claims that it is easy to call listing `https://<host>:<port>/v2/_catalog`. 
+Typically, if we want to search in Docker Hub we can use `docker search whatever` but it is not possible to launch it directly to a private hub. Coming back to Google, we know want to try recover the available Docker images in the private hub and we find [this](https://forums.docker.com/t/docker-private-registry-how-to-list-all-images/21136/3) in the Docker Forums which claims that it is easy to call listing `https://<host>:<port>/v2/_catalog`. 
 
 So, it's time to try it:
 ```
@@ -38,7 +38,7 @@ Pulling repository 52.53.166.207:5000/dev-aws-test-code
 Error: image dev-aws-test-code:latest not found
 ```
 
-So, this is an error that simply says that there is not image tagged as `:latest`, which is the default tag assumed when not provided. As we do not have Docker Hub web UI to ask for it, we come back to Google to ask for a way of listing the tags of an image and we find [https://docs.docker.com/registry/spec/api/#listing-image-tags](this) in the Docker documentation:
+So, this is an error that simply says that there is not image tagged as `:latest`, which is the default tag assumed when not provided. As we do not have Docker Hub web UI to ask for it, we come back to Google to ask for a way of listing the tags of an image and we find [this](https://docs.docker.com/registry/spec/api/#listing-image-tags) in the Docker documentation:
 
 ![](res/level_13-list_images.png)
 
@@ -48,7 +48,7 @@ $ curl http://52.53.166.207:5000/v2/dev-aws-test-code/tags/list
 ```
 
 
-But trying will raise errors because it will try to recover the images from a secure regitry using SSL. We have to take into account that we have to add the repository (`52.53.166.207:5000`) as an insecure repository to a specific daemon.json file that we have to create (full documentation [https://docs.docker.com/registry/insecure/](here).
+But trying will raise errors because it will try to recover the images from a secure regitry using SSL. We have to take into account that we have to add the repository (`52.53.166.207:5000`) as an insecure repository to a specific daemon.json file that we have to create (full documentation [here](https://docs.docker.com/registry/insecure/).
 
 The details of the daemon.json are simple:
 ```
@@ -153,4 +153,4 @@ Done! :D
 Solution
 --------
 
-`flag:{ea940af17b004f229329682b4ab0d2502d739920c27d4d6ea94233780fe7fa72c21b31c56e2b4aa68340992a2147056d298870`
+```flag:{ea940af17b004f229329682b4ab0d2502d739920c27d4d6ea94233780fe7fa72c21b31c56e2b4aa68340992a2147056d298870faf4094f179025579a40266cf1}```
