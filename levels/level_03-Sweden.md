@@ -30,3 +30,15 @@ Solution
 
 `flag:{685-295-741}`
 
+Lessons Learned
+---------------
+
+The analyst arsenal for this challenge included:
+
+- Google Search Engine
+
+Things not to forget in future competitions:
+
+1. Identifying the relevant keywords in the description to start launching the queries.
+2. Although unneded here, having a solid knowledge of advanced Google Dorking techniques.
+3. Reading the rules at the beginning of the competition to know the flag submission format. And do not forget a single colon. Never.
