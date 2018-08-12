@@ -4,9 +4,8 @@ Level 11: Ethiopia
 Description
 -----------
 
-```
 While pen-testing an organization in Germany, our pen-tester figured out the redis build id, i.e. ef08edc3eb2339c3. He was trying to figure out the run id of the server to compromise it further. However, since the connectivity dropped, IP changed. Can you figure out the 'run_id' of this server.
-```
+
 **Points**: 100
 
 WriteUp
@@ -22,11 +21,11 @@ So we have things like this:
 
 Let's try `redis_build_id:ef08edc3eb2339c3`. The results are not a lot. 
 
-![A lot of machines](/res/level_11-many_systems.png)
+![A lot of machines](/res/level_11-redis_systems.png)
 
 Remember that the description said that the pentesting took place in Germany, so let's add `country:"DE"`. 
 
-![Looking for German machines](/res/level_11-germany.png)
+![Looking for German machines](/res/level_11-redis_germany.png)
 
 It seems that it is time to try until we find the correct one `57109bb0e90558c7b83bbacb098811e22e87cfdb`. Another one for us.
 
